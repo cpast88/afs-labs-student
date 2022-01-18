@@ -8,7 +8,10 @@ metadata:
 spec:
   replicas: 1
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+        maxUnavailable: 0
   minReadySeconds: 20
   selector:
     matchLabels:
@@ -23,6 +26,6 @@ spec:
         - secretRef:
             name: db-secret
         name: db-deployment
-        image: harbor.dev.afsmtddso.com/cpastore-harbor-project/db:a499f36-bf86443
+        image: docker pull harbor.dev.afsmtddso.com/cpastore-harbor-project/db:06c0615-3475fc3
         ports:
         - containerPort: 5432
