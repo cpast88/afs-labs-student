@@ -25,6 +25,6 @@ spec:
         - secretRef:
             name: db-secret
         name: app-deployment
-        image: harbor.dev.afsmtddso.com/cpastore-harbor-project/app:a499f36-bf86443
+        image: harbor.dev.afsmtddso.com/cpastore-harbor-project/app:cdedaf4-4364c6b
         ports:
         - containerPort: 5000
