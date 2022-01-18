@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-
+-- db comment to trigger pipeline
 -- NEW COMMENT - testing db pipeline pt 5
 
 -- Dumped from database version 9.5.4
